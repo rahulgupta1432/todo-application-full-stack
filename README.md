@@ -44,6 +44,13 @@ This is a simple Express.js web application where users can sign up, log in, and
 
    ```env
    SECRET=your-secret-key
+   PORT=
+DB_NAME=
+DB_USER=roo
+DB_PASSWORD=
+DB_HOST=
+JWT_SECRET=
+
    ```
 
 4. Start the application:
