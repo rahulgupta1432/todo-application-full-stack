@@ -44,12 +44,12 @@ This is a simple Express.js web application where users can sign up, log in, and
 
    ```env
    SECRET=your-secret-key
-   PORT=
-DB_NAME=
-DB_USER=roo
+   PORT=4000
+DB_NAME=to-do-app
+DB_USER=root
 DB_PASSWORD=
-DB_HOST=
-JWT_SECRET=
+DB_HOST=localhost
+JWT_SECRET=do-to-list
 
    ```
 
