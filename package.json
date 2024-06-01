@@ -4,7 +4,7 @@
   "description": "npm i",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require @babel/register --exit 'test/**/*.js'",
     "dev": "nodemon index.js"
   },
   "keywords": [],
@@ -28,6 +28,7 @@
     "sequelize": "^6.37.3"
   },
   "devDependencies": {
+    "@babel/register": "^7.24.6",
     "chai": "^5.1.1",
     "chai-http": "^4.4.0",
     "mocha": "^10.4.0"
