@@ -30,8 +30,8 @@ This is a simple Express.js web application where users can sign up, log in, and
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/todoapp.git
-   cd todoapp
+   git clone https://github.com/rahulgupta1432/todo-application-full-stack.git
+   cd todo-application-full-stack
    ```
 
 2. Install dependencies:
@@ -43,8 +43,8 @@ This is a simple Express.js web application where users can sign up, log in, and
 3. Create a `.env` file in the root directory with the following content:
 
    ```env
-   SECRET=your-secret-key
-   PORT=4000
+SECRET=your-secret-key
+PORT=4000
 DB_NAME=to-do-app
 DB_USER=root
 DB_PASSWORD=
@@ -56,10 +56,11 @@ JWT_SECRET=do-to-list
 4. Start the application:
 
    ```bash
+   npm run dev
    npm start
    ```
 
-5. Visit `http://localhost:3000` in your browser to access the application.
+5. Visit `http://localhost:4000` in your browser to access the application.
 
 ## Usage
 
