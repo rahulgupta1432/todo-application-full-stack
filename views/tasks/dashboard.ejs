@@ -1,0 +1,43 @@
+<%- include("../layouts/layout.ejs") %>
+<h1>Dashboard</h1>
+<form action="/tasks" method="POST">
+    <div class="mb-3">
+        <label for="title" class="form-label">Task Title</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Task Description</label>
+        <textarea class="form-control" id="description" name="description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Task</button>
+</form>
+<h2>Your Tasks</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Completed</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% tasks.forEach((task, index) => { %>
+        <tr>
+            <th scope="row"><%= index + 1 %></th>
+            <td><%= task.title %></td>
+            <td><%= task.description %></td>
+            <td><%= task.completed ? 'Yes' : 'No' %></td>
+            <td>
+                <form action="/tasks/<%= task.id %>/toggle" method="POST" style="display:inline;">
+                    <button type="submit" class="btn btn-sm btn-warning">Toggle</button>
+                </form>
+                <form action="/tasks/<%= task.id %>/delete" method="POST" style="display:inline;">
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>

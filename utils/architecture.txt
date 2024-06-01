@@ -1,0 +1,23 @@
+ToDoApp/
+├── config/
+│   └── db.js
+├── controllers/
+│   └── authController.js
+│   └── taskController.js
+├── models/
+│   └── User.js
+│   └── Task.js
+├── routes/
+│   └── authRoutes.js
+│   └── taskRoutes.js
+├── views/
+│   └── layouts/
+│       └── layout.ejs
+│   └── auth/
+│       └── login.ejs
+│       └── register.ejs
+│   └── tasks/
+│       └── dashboard.ejs
+├── .env
+├── app.js
+└── package.json
