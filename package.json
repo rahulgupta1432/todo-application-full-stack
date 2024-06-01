@@ -4,7 +4,7 @@
   "description": "npm i",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require @babel/register --exit 'test/**/*.js'",
+    "test": "mocha --require @babel/register --exit 'test.unit.js'",
     "dev": "nodemon index.js"
   },
   "keywords": [],
